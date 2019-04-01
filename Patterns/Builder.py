@@ -133,7 +133,7 @@ class Pizza:
 
     def prepare_dough(self, dough):
         self.dough = dough
-        print('preparing the {} dough of your{}...'.format(self.dough.name, self))
+        print('preparing the {} dough of your {}...'.format(self.dough.name, self))
         time.sleep(STEP_DELAY)
         print('done with the {} dough'.format(self.dough.name))
 
