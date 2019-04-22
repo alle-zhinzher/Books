@@ -10,6 +10,7 @@ TreeType = Enum('TreeType', 'apple_tree cherry_tree peach_tree')
 
 
 class Tree:
+    pool = dict()
 
     def __new__(cls, tree_type):
         obj = cls.pool.get(tree_type, None)
